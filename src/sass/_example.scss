@@ -25,3 +25,21 @@
   background-size: cover;
   background-position: center;
 }
+.gallery{
+  
+  display: flex;
+  
+  flex-wrap:wrap;
+  flex-grow: 1;
+  
+}
+.stats{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.photo-card{
+  
+  border: solid 2px,
+}
