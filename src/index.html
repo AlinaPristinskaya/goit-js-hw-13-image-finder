@@ -16,6 +16,7 @@
 />
   </head>
   <body>
+  
     <form class="search-form" id="search-form">
       <input
         type="text"
@@ -23,11 +24,7 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-    </form>
-    <ul class="gallery">
-      <!-- Список <li> с карточками изображений -->
-    </ul>
-    <button
+      <button
       type="button"
       class="btn btn-primary button"
       data-action="load-more"
@@ -37,9 +34,20 @@
         role="status"
         aria-hidden="true"
       ></span>
-
+  
       <span class="label">Показать ещё</span>
     </button>
+      
+    </form>
+   
+    <ul class="gallery">
+      <!-- Список <li> с карточками изображений -->
+    </ul>
+  
+    
+    
+    <div id="box" class="box theend"></div>
+    
 
     
     <script src="./index.js"></script>

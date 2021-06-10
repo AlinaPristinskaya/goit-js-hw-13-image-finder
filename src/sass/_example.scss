@@ -38,8 +38,18 @@
   justify-content: space-around;
   
 }
-
+.body{
+  position: relative;
+}
 .photo-card{
   
   border: solid 2px,
+}
+.search-form{
+  position: fixed;
+  top:0;
+}
+.theend{
+  color: #009688;
+  font-size: 30px;
 }
