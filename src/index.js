@@ -16,7 +16,7 @@ loadMoreBtn.addEventListener('click', onLoadMore);
 
 const newsApiService =new NewsApiService();
 console.log(newsApiService);
-
+let length='';
 
 function onSearch(e){
   
@@ -34,14 +34,16 @@ function onSearch(e){
 }
 
 function onLoadMore(){
-  
-  newsApiService.fetchArticles().then(appendHitsMarkup);
+  if(length===12){
+    newsApiService.fetchArticles().then(appendHitsMarkup);
+  }
+    
 
 }
 function appendHitsMarkup(hits){
  
   hitsContainer.insertAdjacentHTML('beforeend',imageCard(hits));
-  
+ length=hits.length;
   if(hits.length <12 ){
     
     element.textContent="Это были все варианты.Попробуйте сделать другой запрос"
@@ -49,7 +51,8 @@ function appendHitsMarkup(hits){
     
     element.textContent=""
   }
-    
+  console.log(length)
+  return length;  
  
 
 }
