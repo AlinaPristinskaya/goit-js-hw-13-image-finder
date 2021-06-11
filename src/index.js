@@ -62,7 +62,7 @@ var hiddenElement = document.getElementById("box");
 var btn = document.querySelector('.label');
 
 function handleButtonClick() {
-   hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+   hiddenElement.scrollIntoView({block: "end", behavior: "smooth"});
 }
 
 btn.addEventListener('click', handleButtonClick);
