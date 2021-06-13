@@ -36,14 +36,21 @@
 .stats{
   display: flex;
   justify-content: space-around;
+ 
+ 
   
 }
 .body{
   position: relative;
 }
 .photo-card{
+  display: flex;
+  flex-direction: column;
   
-  border: solid 2px,
+  height: 500px;
+  
+  border: solid 2px;
+  justify-content: space-between;
 }
 .search-form{
   position: fixed;
@@ -52,4 +59,10 @@
 .theend{
   color: #009688;
   font-size: 30px;
+}
+.itemImage{
+  max-height:450px;
+  max-width: 550px;
+  
+
 }
